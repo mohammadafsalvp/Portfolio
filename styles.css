@@ -458,26 +458,42 @@ header nav {
     margin-bottom: 2.5rem;
 }
 
-.contact-actions {
+.contact-details-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    width: 100%;
 }
 
-.social-links {
+.contact-item {
     display: flex;
-    gap: 2rem;
-    font-size: 1.5rem;
-}
-
-.social-links a {
+    align-items: center;
+    gap: 1.5rem;
     color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     transition: var(--transition);
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
 }
 
-.social-links a:hover {
+.contact-item i {
+    font-size: 1.5rem;
     color: var(--primary);
+    width: 30px;
+    text-align: center;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+    transform: translateY(-2px);
 }
 
 /* Footer */
